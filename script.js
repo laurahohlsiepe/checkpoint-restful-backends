@@ -13,7 +13,7 @@ function showContacts() {
       contactCard.appendChild(photo);
 
       // Name
-      const friendName = document.createElement("h2");
+      const friendName = document.querySelector("#friend-name");
       const title = data[0].name.title;
       const firstNames = data[0].name.first;
       const familyNames = data[0].name.last;
@@ -25,7 +25,7 @@ function showContacts() {
       contactCard.appendChild(friendName);
 
       // Profession
-      const job = document.createElement("h3");
+      const job = document.querySelector("#job");
       const jobOfPerson = data[0].title;
       job.innerText = jobOfPerson;
 
@@ -33,7 +33,7 @@ function showContacts() {
       contactCard.appendChild(job);
 
       // Mutual Connections
-      const mutuals = document.createElement("h3");
+      const mutuals = document.querySelector("#mutuals");
       const mutualPeople = data[0].mutualConnections;
 
       const mutualsText = mutualPeople + " " + "mutual connections";
@@ -41,6 +41,16 @@ function showContacts() {
 
       newContacts.appendChild(contactCard);
       contactCard.appendChild(mutuals);
+
+      //background
+      const backgroundImage = data[0].backgroundImage;
+
+      contactCard.style.backgroundImage = "url(" + backgroundImage + ")";
+
+      //connect button
+      const connectBtn = document.querySelector("#connect-btn");
+      newContacts.appendChild(contactCard);
+      contactCard.appendChild(connectBtn);
     });
 }
 
