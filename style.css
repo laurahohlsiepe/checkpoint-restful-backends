@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Barlow", sans-serif;
+  font-size: 14px;
+  background-color: beige;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid silver;
+  background-color: white;
+}
+
+.invitations {
+  display: flex;
+  margin-right: 60rem;
+}
+
+.manage-div {
+  display: flex;
+}
+
+.manage-button {
+  color: grey;
+  font-weight: 600;
+}
+
+.people-you-know {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.5rem;
+}
+
+.people {
+  display: flex;
+  margin-right: 44rem;
+}
+
+.see-all-button {
+  display: flex;
+  font-weight: 600;
+  color: grey;
+}
+
+.contacts {
+  margin-top: 1rem;
+  border: 1px solid silver;
+  background-color: white;
+}
+
+.contact-card {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 2rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgrey;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+  background-color: 50% white;
+}
+
+#photo {
+  border-radius: 50%;
+}
+
+.button-connect {
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3rem;
+  padding: 0.3rem;
+  width: 9rem;
+  color: darkblue;
+}

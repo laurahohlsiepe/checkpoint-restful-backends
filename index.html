@@ -4,24 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>LinkedIn</title>
   </head>
   <body>
     <header>
-      <p>No pending invitations</p>
-      <p>Manage</p>
+      <div class="header-box">
+        <div class="invitations">
+          <p>No pending invitations</p>
+        </div>
+        <div class="manage-div">
+          <p class="manage-button">Manage</p>
+        </div>
+      </div>
     </header>
     <main>
       <section class="contacts" id="new-contacts">
-        <p>People you may know in Greater Nuremberg Metropolitan Area</p>
-        <p>See all</p>
+        <div class="people-you-know">
+          <div class="people">
+            People you may know in Greater Nuremberg Metropolitan Area
+          </div>
+          <p class="see-all-button">See All</p>
+        </div>
+
         <div id="contact-card" class="contact-card">
+          <img src="" alt="" id="background-image" />
           <img src="" alt="" id="photo" />
           <p id="friend-name"></p>
           <p id="job"></p>
           <p id="mutuals"></p>
-          <button id="connect-btn">Connect</button>
+          <button id="connect-btn" class="button-connect">Connect</button>
         </div>
       </section>
     </main>
