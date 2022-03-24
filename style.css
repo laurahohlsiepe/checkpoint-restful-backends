@@ -21,7 +21,7 @@ body {
 
 .invitations {
   display: flex;
-  margin-right: 60rem;
+  margin-right: 70rem;
 }
 
 .manage-div {
@@ -42,7 +42,7 @@ body {
 
 .people {
   display: flex;
-  margin-right: 44rem;
+  margin-right: 55rem;
 }
 
 .see-all-button {
@@ -57,10 +57,59 @@ body {
   background-color: white;
 }
 
+#all-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-left: 6rem;
+  gap: 1rem;
+}
+
+#little-card {
+  display: block;
+  height: 80%;
+  row-gap: 2rem;
+  border: 1px solid lightgrey;
+  border-radius: 5%;
+  padding: 1rem;
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+  background-color: white;
+  text-align: center;
+  inline-size: 20%;
+  overflow-wrap: break-word;
+}
+
+#connect-button {
+  border: 1px solid darkblue;
+  color: darkblue;
+  background-color: white;
+  padding: 0.5rem 3rem 0.5rem 3rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+#photo {
+  border-radius: 50%;
+}
+
+#friend-name {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+#job {
+  font-size: 15px;
+}
+/*
 .contact-card {
   display: inline-flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 1rem;
   margin: 2rem;
   width: 16rem;
   border-radius: 0.5rem;
@@ -69,19 +118,5 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 25%;
   background-color: 50% white;
-}
-
-#photo {
-  border-radius: 50%;
-}
-
-.button-connect {
-  background-color: white;
-  text-decoration: none;
-  text-align: center;
-  display: inline-block;
-  border-radius: 3rem;
-  padding: 0.3rem;
-  width: 9rem;
-  color: darkblue;
-}
+} 
+*/
